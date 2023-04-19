@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=k, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="heaadermatter.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="header.js">
+    <script defer src="header.js"></script>
+   
+    <script defer src="contact.js" type="text/javascript"></script>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("eSDsmedYpbSbO1cxG");
+   })();
+</script>
+  
+    
+
+    <title>Document</title>
+
+    
+</head>
+
+<body>
+   
+    <header class="global-header">
+        
+        <div>
+          <img class="logo" src="images/logo-1.svg">
+        </div>
+      <nav class="main-menu">
+          <a href="mainMatter.html">Home</a>
+          <a class="Expertise" id="first-button">Expertise</a>
+          <a class="Project" id="second-button">Project</a>
+          <a href="contact.html">Contact</a>
+          <a>About us</a>
+      </nav>
+    
+    
+    
+    <!--burger for mobile-->
+    <div class="burger-icon" id="burgerIcon">
+        <img src="images/hamburger.svg" alt="burger icon">
+    </div>
+    </header>
+    
+    
+    
+    <!--Side menu-->
+    <aside class="burger-icon-menu" id="side-menu">
+      <header class="second-nav">
+      
+          <img src="images/logo-1.svg">
+          <img id="close-menu" src="images/x.svg">
+      
+      </header>
+      <hr>
+      <div class="nav-side-menu">
+          <a href="mainMatter.html">Home</a>
+          <a id="side-button1">Expertise </a>
+          <a id="side-button2">Project  </a>
+          <a href="contact.html">Contact</a>
+          <a>About us</a>
+      </div>
+    </aside>
+
+       <!--side-drop menu-->
+       <aside>
+        <nav class="EXPERTISE1" id="side-menu-one">
+          <a>Building design</a>
+          <a>Design review</a>
+          <a> Bin and Design Engineering</a>
+        </nav>
+      </aside>
+
+
+    <aside>
+      <nav class="PROJECTS1" id= "side-menu-two">
+        <a href="project-highrise.html">Highrise Buildings</a>
+        <a href="project-residential.html"> Residentail </a> 
+        <a href="project-retail.html"> Retail </a>
+      </nav>
+    </aside>
+
+
+    
+    <!--drop menu-->
+    <aside>
+      <nav class="EXPERTISE" id="menu-one">
+          <a>Building design</a>
+          <a>Design review</a>
+          <a> Bin and Design Engineering</a>
+      </nav>
+    </aside>
+    
+    
+    <aside>
+      <nav class="PROJECTS" id="menu-two">
+        <a id=" Buildings" >Highrise Buildings</a>
+        <a id="Residentail"> Residentail </a> 
+        <a id="Retail" > Retail </a>
+      </nav>
+    </aside>
+
+
+ <main>
+   <h1>contact </h1>
+
+ <section class="contact-container">
+  <div>
+<div class="contact">
+  <img src="images/location.png">
+  <div>
+    <h3>Address</h3>
+    <p>Level 1, 11-19 Bank Place,
+       Melbourne VIC 3000 </p>
+  </div>
+</div>
+
+<div class="contact">
+  <img src="images/phone.png">
+  <div>
+    <h3>Phone</h3>
+    <p>T_+61 3 8692 7262 </p>
+  </div>
+</div>
+  
+<div class="contact">
+  <img src="images/email.png">
+  <div>
+    <h3>Email</h3>
+    <p>ADMIN@MATTERCONSULTING.COM.AU </p>
+  </div>
+</div>  
+<div class="linkedin-insta">
+  <a target=" " href="https://www.instagram.com/matterconsulting/"> <img src="images/linkedIn.jpeg"> </a>
+  <a target=" " href="https://www.linkedin.com/company/matterptyltd/mycompany/"><img src="images/instgram.png"></a>
+  
+</div>
+</div>
+ 
+ 
+<!--action="mailto:moonlight19882017@gmail.com" method="post" enctype="text/plain"-->
+
+<form id="form" >
+  <fieldset>
+    <legend>contact us</legend>
+    <label for="user-name">Name:</label>
+    <br/>
+    <input type="text" id="user-name" name="name" placeholder="your name.." required /><br />
+    <!--<span id="message-name"></span>
+    <br/>-->
+
+    <label for="email">Email:</label>
+    <br/>
+    <input type="email" id="email" name="email" placeholder="your email.."  required /><br />
+    <!--<span id="message-email"></span>
+    <br/>-->
+
+    <label for="phone-number">Phone Number:</label>
+    <br/>
+    <input type="number" id="phone-number" name="phone-number" placeholder="your phone number.." required /><br />
+    <!--<span id="message-phone-number"></span>-->
+  
+
+    <label for="question">Comment</label>
+    <br/>
+    <textarea id="question" placeholder="How can we help you?" ></textarea><br />
+    <!--<span id="message-question"></span>
+    <br/>-->
+   <button onclick="sendMail()">Send</button>
+    <!--
+    <input type="button" id="submit" value="submit" onclick="SendMail()">-->
+    
+</fieldset>
+  </form>
+</section>
+    </main>
+    
+
+    <footer>
+        <section class="footer">
+             <p>© Samah ALmaktary 2023.All Rights Reserved </p>
+             <nav class="nav-footer">
+                 <a target=" " href="https://www.instagram.com/matterconsulting/"> <img src="images/linkedIn.jpeg"> </a>
+                 <a target=" " href="https://www.linkedin.com/company/matterptyltd/mycompany/"><img src="images/instgram.png"></a>
+                 
+             </nav>
+         </section>  
+    
+     </footer>
+    
+</body>
+</html>
